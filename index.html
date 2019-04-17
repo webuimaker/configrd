@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Configrd</title>
+  </head>
+  <body>
+
+    <div class="container navigation">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+      <div class="row navbr">
+      <div class="nav-brnd">
+  <a class="navbar-brand" href="#"><img src="images/config.png" width="30" height="30" class="d-inline-block align-top" alt="">Configrd</a>
+</div>
+  <div class="tech-links">
+    <div class="row tc-lnk">
+      <div class="t-link">
+        <a href="https://github.com"><span>Github</span></a>
+      </div>
+      <div class="t-link">
+        <a href="https://docker.com"><span>Docker</span></a>
+      </div>
+    </div>
+  </div>
+      <div class="srch">
+    <span class="navbar-text">
+      <img src="images/search.png"> <input type="text" placeholder="Search..." >
+    </span>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="clear"></div>
+<div class="main">
+  <div class="con">
+    <div class="row">
+        <div id="tab-sidebar" data-scrollable="true" class="col-3 nav nav-pills" role="tablist" aria-orientation="vertical">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a id="pill-A" class="nav-link col-12 active" data-toggle="pill" href="#tab-A" role="tab" aria-controls="tab-A" aria-selected="true">About</a>
+            <a id="pill-B" class="nav-link col-12" data-toggle="pill" href="#tab-B" role="tab" aria-controls="tab-B" aria-selected="false">Quick Start</a>
+            <a id="pill-x" class="nav-link disabled col-12"  aria-disabled="true">GETTING STARTED</a>
+            <a id="pill-C" class="nav-link col-12" data-toggle="pill" href="#tab-C" role="tab" aria-controls="tab-C" aria-selected="false">Overview</a>
+            <a id="pill-D" class="nav-link col-12" data-toggle="pill" href="#tab-D" role="tab" aria-controls="tab-D" aria-selected="false">Install</a>
+            <a id="pill-E" class="nav-link col-12" data-toggle="pill" href="#tab-E" role="tab" aria-controls="tab-E" aria-selected="false">Configure</a>
+            <a id="pill-F" class="nav-link col-12" data-toggle="pill" href="#tab-F" role="tab" aria-controls="tab-F" aria-selected="false">Query</a>
+            <a id="pill-x" class="nav-link disabled col-12"  aria-disabled="true">CONCEPTS</a>
+            <a id="pill-G" class="nav-link col-12" data-toggle="pill" href="#tab-G" role="tab" aria-controls="tab-G" aria-selected="false">Repositories</a>
+            <a id="pill-H" class="nav-link col-12" data-toggle="pill" href="#tab-H" role="tab" aria-controls="tab-H" aria-selected="false">Inheritance</a>
+            <a id="pill-I" class="nav-link col-12" data-toggle="pill" href="#tab-I" role="tab" aria-controls="tab-I" aria-selected="false">Secrets</a>
+            <a id="pill-J" class="nav-link col-12" data-toggle="pill" href="#tab-J" role="tab" aria-controls="tab-J" aria-selected="false">Filters</a>
+            <a id="pill-K" class="nav-link col-12" data-toggle="pill" href="#tab-K" role="tab" aria-controls="tab-K" aria-selected="false">Templates</a>
+            <a id="pill-L" class="nav-link col-12" data-toggle="pill" href="#tab-L" role="tab" aria-controls="tab-L" aria-selected="false">Query</a>
+        </div>
+      </div>
+
+        <div id="tab-content" class="col-9 tab-content">
+            <div id="tab-A" class="tab-pane fade show active" role="tabpanel" aria-labelledby="pill-A">
+              
+        <h1>About</h1>
+        <p class="optional-head">Sync configurations such as environment variables, application properties and secrets across build pipelines, services and environments.</p>
+        
+        <hr class="top">
+        
+          <h3>Why Configrd</h3>
+          <ul>
+            <li><span class="bull">&bull;</span>It automatically keeps your local development environment up to date with environment variable changes</li>
+            <li><span class="bull">&bull;</span>It keeps all our environments consistent thanks to configuration inheritance</li>
+            <li><span class="bull">&bull;</span>You only have to maintain values that differ between environments</li>
+            <li><span class="bull">&bull;</span>Is a common place to secure, manage, version and pull environment variables from across build pipelines, services, environments and even tech stacks</li>
+            <li><span class="bull">&bull;</span>Encrypt/decrypt secrets on the fly and keep the rest plaintext for easy access and management</li>
+          </ul>
+          <p><span>With</span> <span><strong>configrd</strong></span><span> engineers, devops or infosec can access, manage and secure environmnt variables from anywhere in multiple formats such as key-value, json and yaml. </span></p>
+<p>Variables can be sourced, secured and stored to and from git, file systems, http/s  or AWS S3. </p>
+<p>Configrd deploys on-prem as a micro service alongside your apps and infrastructure to serve configurations on demand.</p>
+        
+          <h4>For Engineers</h4>
+          <ul>
+            <li><span class="bull">&bull;</span>Always keep your local development environment up to date</li>
+            <li><span class="bull">&bull;</span>Access plaintext values & secrets from the same place and in the same way</li>
+            <li><span class="bull">&bull;</span>Quickly and easily switch between config profiles for development, testing or debugging purposes</li>
+            <li><span class="bull">&bull;</span>Use all the same tools you already know and love. I.e. store configs to yaml file in git, make updates using VSCode, Vim etc</li>
+            <li><span class="bull">&bull;</span>Keep variables for NodeJs, React, Python, Java and other stacks in the same place for end to end transparency and reuse</li>
+          </ul>
+          <h4>For CI/CD Pipelines</h4>
+          <ul>
+            <li><span class="bull">&bull;</span>Keep environment variables and secrets external to CI/CD tools and platforms</li>
+            <li><span class="bull">&bull;</span>Pass more builds thanks to fewer out of date or missing config values</li>
+            <li><span class="bull">&bull;</span>Manage, secure and access environment variables in a consistent fashion at development, build, test, deploy and run-time  </li>
+          </ul>
+          <h4>For Containers</h4>
+          <ul>
+            <li><span class="bull">&bull;</span>Build and promote a single reusable image between environments thanks to externalized configurations</li>
+            <li><span class="bull">&bull;</span>Pass values via ENV at container start, pull config values via script or directly from application at boot</li>
+            </ul>
+            <h4>For DevOps and InfoSec</h4>
+            <ul>
+              <li><span class="bull">&bull;</span>Single source of truth for all environment variables and application properties</li>
+              <li><span class="bull">&bull;</span>Manage config values in a common but flexible hierarchy across different tech stacks, platforms and tools</li>
+              <li><span class="bull">&bull;</span>Fight configuration drift</li>
+              <li><span class="bull">&bull;</span>Collaborate with application engineers to keep environment settings up to date</li>
+              <li><span class="bull">&bull;</span>Reduce or even eliminate duplicate/redundant configs within and across environments</li>
+              <li><span class="bull">&bull;</span>Globally enforce encryption of secrets, manage keys through services such as AWS KMS, store values anywhere (i.e. git) and however (i.e. json) you like</li>
+            </ul>
+            <a class="btn btn-secondary btn-lg btn-block" href="#tab-B">
+              <div class="all-btn">
+              <div class="button-txt text-left">                
+                <div>
+                  <span class="text-muted">Next</span>
+                </div>
+                <div>
+                  <span class="txt">Quick Start</span>
+                </div>
+              </div>
+              <div class="text-right" style="">
+                <svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380">
+                  <g><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></g>
+                </svg>
+              </div>
+              </div>
+            </a>
+            <hr>
+
+            <div class="image-presentation" role="presentation">
+              <img class="image-present" src="https://avatars2.githubusercontent.com/u/1750504?v=4">
+              <div class="after-txt">
+                <span class="text-updated">
+                  <span>Last updated <span>8 days ago</span></span>
+                </span>
+              </div>
+            </div>
+
+
+
+            </div>
+            <div id="tab-B" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-B"></div>
+            <div id="tab-C" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-C">[C]</div>
+            <div id="tab-D" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-D">[D]</div>
+            <div id="tab-E" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-E">[E]</div>
+            <div id="tab-F" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-F">[F]</div>
+            <div id="tab-G" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-G">[G]</div>
+            <div id="tab-H" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-H">[H]</div>
+            <div id="tab-I" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-I">[I]</div>
+            <div id="tab-J" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-J">[J]</div>
+            <div id="tab-K" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-K">[K]</div>
+            <div id="tab-L" class="tab-pane fade" role="tabpanel" aria-labelledby="pill-L">[L]</div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+ 
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
